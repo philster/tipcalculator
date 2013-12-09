@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22941F551855C54F00BE019C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22941F531855C54F00BE019C /* SettingsViewController.m */; };
+		22941F561855C54F00BE019C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22941F541855C54F00BE019C /* SettingsViewController.xib */; };
 		22A4C09317EA086000DF21D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A4C09217EA086000DF21D6 /* Foundation.framework */; };
 		22A4C09517EA086000DF21D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A4C09417EA086000DF21D6 /* CoreGraphics.framework */; };
 		22A4C09717EA086000DF21D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A4C09617EA086000DF21D6 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22941F521855C54F00BE019C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		22941F531855C54F00BE019C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		22941F541855C54F00BE019C /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		22A4C08F17EA086000DF21D6 /* tipcalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipcalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A4C09217EA086000DF21D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22A4C09417EA086000DF21D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,9 @@
 				22A4C0C117EA0D9C00DF21D6 /* TipViewController.h */,
 				22A4C0C217EA0D9C00DF21D6 /* TipViewController.m */,
 				22A4C0C317EA0D9C00DF21D6 /* TipViewController.xib */,
+				22941F521855C54F00BE019C /* SettingsViewController.h */,
+				22941F531855C54F00BE019C /* SettingsViewController.m */,
+				22941F541855C54F00BE019C /* SettingsViewController.xib */,
 			);
 			path = tipcalculator;
 			sourceTree = "<group>";
@@ -199,6 +207,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Philster;
 				TargetAttributes = {
+					22A4C08E17EA086000DF21D6 = {
+						DevelopmentTeam = UM98XS8AQH;
+					};
 					22A4C0A917EA086000DF21D6 = {
 						TestTargetID = 22A4C08E17EA086000DF21D6;
 					};
@@ -230,6 +241,7 @@
 				22A4C0C517EA0D9C00DF21D6 /* TipViewController.xib in Resources */,
 				22A4C09D17EA086000DF21D6 /* InfoPlist.strings in Resources */,
 				22A4C0A517EA086000DF21D6 /* Images.xcassets in Resources */,
+				22941F561855C54F00BE019C /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +263,7 @@
 				22A4C0A317EA086000DF21D6 /* AppDelegate.m in Sources */,
 				22A4C0C417EA0D9C00DF21D6 /* TipViewController.m in Sources */,
 				22A4C09F17EA086000DF21D6 /* main.m in Sources */,
+				22941F551855C54F00BE019C /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,11 +382,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tipcalculator/tipcalculator-Prefix.pch";
 				INFOPLIST_FILE = "tipcalculator/tipcalculator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -383,11 +399,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tipcalculator/tipcalculator-Prefix.pch";
 				INFOPLIST_FILE = "tipcalculator/tipcalculator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +472,7 @@
 				22A4C0BD17EA086000DF21D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22A4C0BE17EA086000DF21D6 /* Build configuration list for PBXNativeTarget "tipcalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +481,7 @@
 				22A4C0C017EA086000DF21D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
